@@ -16,7 +16,7 @@ public class CyclicRotateByone {
     {
         int temp = arr[n - 1];
         
-        //shifting the element by one place from left to right
+        //shifting the element by one place from right to left
         for(int i = n - 1; i > 0; i--){
             arr[i] = arr[i-1]; 
         }
