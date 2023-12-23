@@ -1,4 +1,5 @@
 package arrays;
+// Given an array which consists of only 0, 1 and 2. Sort the array without using any sorting algo
 
 public class Sort012 {
 	//this method uses extra space to segregate 0s,1s and 2s
@@ -16,7 +17,7 @@ public class Sort012 {
 			else
 				countTwo++;
 		}
-		System.out.println(countZero +" "+countOne+" "+countTwo);
+		
 		int[] newArr = new int[arr.length];
 		
 		int k = 0;
@@ -36,8 +37,8 @@ public class Sort012 {
 			countTwo--;
 		}
 		
-		for(int i : newArr)
-			System.out.print(i+" ");
+		// for(int i : newArr)
+		// 	System.out.print(i+" ");
 		
 	}
 
@@ -73,8 +74,9 @@ public class Sort012 {
 		int arr[] = {1,1,1,0,2,0,2};
 		int arr2[] = {2,1,0,1,0,2};
         dutchNationalFlag(arr);
-        ReverseArray.print(arr, "Dutch National Flag");
+        Utils.print(arr, "Dutch National Flag");
 		usingExtraSpace(arr2);
+		Utils.print(arr, "Using extra space");
 	}
 
 }

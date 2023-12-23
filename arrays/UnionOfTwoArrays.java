@@ -30,7 +30,6 @@ public class UnionOfTwoArrays {
             if(union.containsKey(a)) union.put(a, union.get(a)+1);
             else union.put(a, 0);
         }
-
         return union.size();
     }
     public static void main(String args[]){

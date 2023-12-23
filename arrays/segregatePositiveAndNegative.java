@@ -23,7 +23,8 @@ public class segregatePositiveAndNegative {
 
     public static void main(String args[]){
         int array[] = {-4, 0, 6, -2, 7, 9, -3};
+        Utils.print(array, "Input Array");
         segregatePosAndNeg(array);
-        ReverseArray.print(array, "Segregated Array");
+        Utils.print(array, "Segregated Array");
     }
 }

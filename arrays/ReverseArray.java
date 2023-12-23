@@ -1,14 +1,9 @@
 package arrays;
+import arrays.Utils;
 
 public class ReverseArray {
 
-   //display Array
-	public static void print(int[] arr, String str){
-		System.out.println(str);
-		for(int i: arr)
-			System.out.print(i+" ");
-		System.out.println();
-	}
+   
 	
 	//reverse using loop TC-O(n) SC- O(n)
 	public static int[] reverseArray(int arr[]){
@@ -58,10 +53,10 @@ public class ReverseArray {
 		int[] arr = {1,2,3,4,5,6,7};
 		int[] arr2 = {9,8,7,4,2,1};
 		
-		print(reverseArray(arr), loop);
-		print(reverseArrayTwoPointers(arr, 0, arr.length-1), twoPointers);
+		Utils.print(reverseArray(arr), loop);
+		Utils.print(reverseArrayTwoPointers(arr, 0, arr.length-1), twoPointers);
 		reverseUsingRecursion(arr2, 0, arr2.length-1);
-		print(arr2, "Recursion");
+		Utils.print(arr2, "Recursion");
 			
 	}
 }
