@@ -1,5 +1,4 @@
 package arrays;
-import arrays.Utils;
 
 public class ReverseArray {
 
@@ -57,6 +56,5 @@ public class ReverseArray {
 		Utils.print(reverseArrayTwoPointers(arr, 0, arr.length-1), twoPointers);
 		reverseUsingRecursion(arr2, 0, arr2.length-1);
 		Utils.print(arr2, "Recursion");
-			
 	}
 }
